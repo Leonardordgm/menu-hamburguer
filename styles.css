@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.button {
+    margin-top: 10px;
+    margin-left: 10px;
+    transition: .2s;
+}
+.button.open{
+    z-index: 1;
+    position: absolute;
+    margin-left: 150px;
+    transition: .2s;
+}
+
+.button.open div{
+    background-color: #ffffff;
+}
+
+.button div{
+    background-color: black;
+    height: 1px;
+    width: 30px;
+}
+.button div:nth-child(2){
+    margin-top: 10px;
+}
+.button div:nth-child(3){
+    margin-top: 10px;
+}
+
+.navbar{
+    position: absolute;
+    color: #fff;
+    display: none;
+    background-color: black;
+    width: 200px;
+    height: 100%;
+    transition: .2s;
+}
+.navbar.open{
+    transition: .2s;
+    display: block;
+}
+.button li{
+    margin-top: 30px;
+}
+.navbar.open ul{
+    font-family: arial;
+    margin: 20px;
+    list-style: none;
+}
+.navbar.open a{
+    color: #fff;
+    text-decoration: none;
+    transition: .2s;
+}
+.navbar.open a:hover{
+    color: darkgray;
+    transition: .2s;
+}
+
+h1{
+    position: relative;
+    margin-left: 20%;
+}
+p{
+    position: relative;
+    margin-left: 20%;
+}
